@@ -1,0 +1,180 @@
+/*CSS DOCUMENT*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #0c1217;
+}
+
+/*NAVBAR IMAGE?*/
+
+h2, h3 {
+    font-size: 2em;
+    color: black;
+    font-family: 'Franklin Gothic Medium',
+     'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    font-weight: 700;
+}
+
+/*NAVBAR*/
+.navbar {
+    padding-top: 0px
+    padding-bottom: 10px;
+    position: fixed;
+    background-color: #141d26; /*undecided on the background color*/
+    width: 100%;
+}
+
+.navbar::after{
+    clear: both;
+}
+
+.navbar li {
+    display: inline;
+    float: left;
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+}
+
+.navbar a:hover {
+    background-color: black;
+    color: darkgray;
+}
+/*NAVBAR END------------------*/
+
+/*HOME-------*/
+#home {
+    width: 100%;
+    height: 350px;
+    background-color: #243447;
+}
+
+.heading-name h1, h3 {
+    color: lightgray;
+    text-align: center;
+    text-shadow: 2px 1px 1px black;
+}
+
+.heading-name h3 {
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    font-size: 1.3em;
+}
+
+.heading-name h1 {
+    font-weight: 400;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 4em;
+}
+
+/*ABOUT-------*/
+.about-contain h2 {
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 1.8em;
+    text-align: left;
+    color: #20C20E;
+    text-shadow: 2px 2px 2px solid rgba(255,255,255,0.8);
+    padding-bottom: 5px;
+}
+
+.about-contain p {
+    padding-right: 15px;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*ABOUT END-----*/
+
+
+/*GITHUB -------*/
+.github-contain h2 {
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 1.8em;
+    text-align: left;
+    color: #20C20E;
+    padding-bottom: 5px;
+}
+
+.github-contain p, a {
+    padding-left: 15px;
+    text-align: left;
+}
+/*GITHUB END ------*/
+
+/*CONTACT--------*/
+.contact-contain h2 {
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 1.8em;
+    text-align: left;
+    color: #20C20E;
+    padding-bottom: 5px;
+}
+
+/*CONTACT END------*/
+
+/*FOOTER STYLING*/
+footer {
+    position: relative;
+    display: block;
+    padding-top: 0px;
+    height: 200px;
+    width: 100%;
+    background-color: #243447;
+ }
+
+ .center {
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: small;
+ }
+
+ /*FOOTER STYLING END*/
+
+/*COL WORKING---------------------------*/
+
+.col1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 350px;
+    background-color: rgb(100, 100, 100);
+    border: 5px solid #243447;
+}
+
+.col2 {
+    float: right;
+    width: 50%;
+    padding: 10px;
+    height: 350px;
+    background-color: rgb(100, 100, 100);
+    border: 5px solid #243447;
+}
+
+/*COL WORKING END ------------------------------*/
+    /*layout using the column system can break down css
+    into smaller chunks*/
+
+/*ROW CLEARING*/
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    /*rather essentail apparently*/
