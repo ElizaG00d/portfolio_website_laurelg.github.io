@@ -6,7 +6,7 @@ body {
     background-color: #0c1217;
 }
 
-/*NAVBAR IMAGE?*/
+
 
 h2, h3 {
     font-size: 2em;
@@ -28,6 +28,7 @@ p {
     position: fixed;
     background-color: #141d26; /*undecided on the background color*/
     width: 100%;
+    z-index: 400;
 }
 
 .navbar::after{
@@ -58,14 +59,14 @@ p {
 /*HOME-------*/
 #home {
     width: 100%;
-    height: 350px;
-    background-color: #243447;
+    height: 350px;   
 }
 
 .heading-name h1, h3 {
     color: lightgray;
     text-align: center;
     text-shadow: 2px 1px 1px black;
+    background-color:rgba(36, 52, 71, 0.9);
 }
 
 .heading-name h3 {
@@ -80,6 +81,13 @@ p {
     margin-top: 0;
     padding-top: 0;
     font-size: 4em;
+}
+
+/*NAVBAR IMAGE*/
+#home {
+    background-image: url(../imgs/glasses..jpg);
+    background-size: cover;
+    width: 100%;
 }
 
 /*ABOUT-------*/
@@ -127,6 +135,13 @@ p {
     padding-bottom: 5px;
 }
 
+#contact {
+    width: 50%;
+    height: 450px;
+    background-color: rgb(100, 100, 100);
+    border: 5px solid #243447;
+}
+
 /*CONTACT END------*/
 
 /*FOOTER STYLING*/
@@ -134,7 +149,7 @@ footer {
     position: relative;
     display: block;
     padding-top: 0px;
-    height: 200px;
+    height: 100px;
     width: 100%;
     background-color: #243447;
  }
@@ -167,6 +182,14 @@ footer {
     border: 5px solid #243447;
 }
 
+.col-tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+    /*overrides height and padding to provide more room for
+    contact form, keeps rest of formatting for col 1,
+    or col 2*/
+
 /*COL WORKING END ------------------------------*/
     /*layout using the column system can break down css
     into smaller chunks*/
@@ -178,3 +201,80 @@ footer {
     clear: both;
 }
     /*rather essentail apparently*/
+
+/*IMG STYLING*/
+img {
+    filter: grayscale(60%); /*removes img coloring*/
+    display: block; /*ensure images are centered*/
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: auto; /*centers images in combo with margin-left*/
+    margin-left: auto;
+}
+
+img:hover {
+    filter: grayscale(5%);
+    transition: transform 1s;
+    transform: scale(1:1);
+}
+
+.col2-imgs {
+    float: right;
+    width: 47%;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    height: 350px;
+    margin: 0px;
+    background-color: #0c1217;
+}
+
+.col1-imgs {
+    float: left;
+    width: 40%;
+    padding-top: 40px;
+    height: 300px;
+    margin-left: 10px;
+    background-color rgba(197,31,93, 0.7);
+    z-index: 1;
+}
+
+/*FORM STYLING*/
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid ;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type="text"]:hover {
+    box-shadow: 0 0 5px #00004d inset;
+        /*creates a blue shadow in text box when hovered
+        by user*/
+}
+
+/*SUBMIT BUTTON*/
+input[type="submit"] {
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+    border-radius: 5px;
+    background-color: ;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

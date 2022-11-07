@@ -51,7 +51,7 @@
                     <h2>About</h2>
                     <div class="about-div">
                         <p>I'm a well versed Front-End Web Developer with a background
-                            in Graphic Design and passion for web developement. 
+                            in Graphic Design and a degree from Tech Academy.
                         </p>
                         <p>
                             I specialize in JavaScript and CSS and find myself learning
@@ -60,8 +60,8 @@
                     </div>
             </div>
         </div>
-            <div class="img-div-about">
-
+            <div class="col2-imgs" class="row">
+                <img src="./imgs/work.jpg" alt="woman working in front of computer">
             </div>
         </div>
         <!--ABOUT END-->
@@ -73,22 +73,31 @@
                     <h2>GitHub</h2>
                     <div class="git-div">
                         <p>You can view my GitHub projects here:</p>
-                        <a href="">GitHub</a>
+                        <a href="https://github.com/ElizaG00d">GitHub</a>
                     </div>
                 </div>
+            </div>
+            <div class="col1-imgs" class="row">
+                <img src="./imgs/GitHub-Mark.png" alt="github logo">
             </div>
         </div>
         <!--GITHUB END-->
 
         <!--CONTACT-->
-        <div id="contact" class="row">
+        <div id="contact" class="row"> <!--can just add a space between classes to have multiple classes-->
             <div class="col1">
-                <div class="contact-contain">
+                <div class="contact-contain col-tall">
                     <h2>Contact</h2>
-                    <p></p>
+                    
+                    <form action="https://formspree.io/f/xvoyvlqk" method="POST"> <!-- 3rd party service, insert your formspree endpoint in the action attribute -->
+                        <label>Name:</label>
+                            <input type="text" placeholder="Please enter your name here">
+                        <label>Email:</label>
+                            <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                        <label>Message:</label>
+                            <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                            <input type="submit" value="SUBMIT">
                 </div>
-                <div class="form-contact">
-
                 </div>
             </div>
         </div>
